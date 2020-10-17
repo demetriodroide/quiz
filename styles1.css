@@ -1,7 +1,12 @@
 body {
     background-color: rgb(248, 255, 229);
 }
-
+/*
+h6 {
+    display: inline;
+    color: black;
+}
+*/
 form {
     width: auto;
     height: auto;

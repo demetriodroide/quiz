@@ -74,9 +74,10 @@ document.getElementsByClassName("caja5")[0].appendChild(t);
 
 document.getElementsByClassName("caja6")[0].appendChild(b);
 
+////////////
 
 // array pregunta y respuesta
-/*
+
 let mipregunta = [
 	{
 		pregunta: "En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?",
@@ -88,7 +89,97 @@ let mipregunta = [
 		},
 		respuestacorrecta: 'c'
 	}
-];*/
+];
+
+
+///////////////////////////////// funcion pintar 
+
+function pintar(preguntaPintar){
+	let variablepregunta = document.createElement("h3");
+	document.getElementsByClassName("caja1")[0].appendChild(variablepregunta);
+	variablepregunta.innerText = preguntaPintar.pregunta;
+}
+pintar(mipregunta[0]);
+
+/*
+
+function pintar(preguntaPintar){
+	document.getElementsByClassName("caja1").innerText = preguntaPintar.pregunta;
+	
+}
+pintar(mipregunta[0]);
+
+*/
+
+////// respuesta 1
+
+function pintar1(respuestaPintar){
+	let variablerespuesta1 = document.createElement("h6");
+	document.getElementsByClassName("caja2")[0].appendChild(variablerespuesta1);
+	variablerespuesta1.innerText = respuestaPintar.respuestas;
+
+}
+pintar1(mipregunta[0]);
+
+/*
+
+////// respuesta 2
+
+function pintar2(respuestaPintar1){
+	let variablerespuesta2 = document.createElement("h6");
+	document.getElementsByClassName("caja3")[0].appendChild(variablerespuesta2);
+	variablerespuesta2.innerText = respuestaPintar1.respuestas;
+}
+pintar2(mipregunta[1]);
+
+////// respuesta 3
+
+function pintar3(respuestaPintar2){
+	let variablerespuesta3 = document.createElement("h6");
+	document.getElementsByClassName("caja4")[0].appendChild(variablerespuesta3);
+	variablerespuesta3.innerText = respuestaPintar2.respuestas;
+}
+pintar3(mipregunta[2]);
+
+////// respuesta 4
+
+function pintar4(respuestaPintar3){
+	let variablerespuesta4 = document.createElement("h6");
+	document.getElementsByClassName("caja5")[0].appendChild(variablerespuesta4);
+	variablerespuesta4.innerText = respuestaPintar3.respuestas;
+}
+pintar4(mipregunta[3]);
+
+*/
+
+
+
+
+
+
+
+
+/*
+function pintar(preguntaPintar){
+	let variablepregunta = document.getElementsByClassName("caja1");
+	variablepregunta.innerText = preguntaPintar.pregunta;
+	
+}
+pintar(mipregunta[0]);
+*/
+
+/*
+function pintar(preguntaPintar){
+	document.getElementsByClassName("caja1").innerText = preguntaPintar.pregunta;
+}
+pintar(mipregunta[0]);
+*/
+
+
+
+
+
+
 
 let a = document.querySelector("#submit");
 
