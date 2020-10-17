@@ -75,21 +75,60 @@ document.getElementsByClassName("caja5")[0].appendChild(t);
 document.getElementsByClassName("caja6")[0].appendChild(b);
 
 ////////////
-
+/*
+const questions = [
+    {
+		pregunta: "En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?",
+      image: 'img/question1.jpg',
+      answers: [
+        'Jack Napier',
+        'Joe Wayne',
+        'Arthur Fleck',
+        'No se sabe realmente'
+      ],
+      correct: 3
+	}
+]
+*/
 // array pregunta y respuesta
 
-let mipregunta = [
+const mipregunta = [
 	{
 		pregunta: "En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?",
 		respuestas: {
-			a: 'Un bardo',
-			b: 'Un mercader',
-            c: 'Un mago',
-            d: "Un marinero"
+			 a: "Un bardo",
+			 b: "Un mercader",
+             c: "Un mago",
+             d: "Un marinero"
 		},
 		respuestacorrecta: 'c'
+	},
+];
+
+/*
+
+var myQuestions = [
+	{
+		question: "What is 10/2?",
+		answers: {
+			a: '3',
+			b: '5',
+			c: '115'
+		},
+		correctAnswer: 'b'
+	},
+	{
+		question: "What is 30/3?",
+		answers: {
+			a: '3',
+			b: '5',
+			c: '10'
+		},
+		correctAnswer: 'c'
 	}
 ];
+
+*/
 
 
 ///////////////////////////////// funcion pintar 
@@ -114,7 +153,7 @@ pintar(mipregunta[0]);
 ////// respuesta 1
 
 function pintar1(respuestaPintar){
-	let variablerespuesta1 = document.createElement("h6");
+	let variablerespuesta1 = document.createElement("h4");
 	document.getElementsByClassName("caja2")[0].appendChild(variablerespuesta1);
 	variablerespuesta1.innerText = respuestaPintar.respuestas;
 
