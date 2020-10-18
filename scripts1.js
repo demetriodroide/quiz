@@ -74,62 +74,20 @@ document.getElementsByClassName("caja5")[0].appendChild(t);
 
 document.getElementsByClassName("caja6")[0].appendChild(b);
 
-////////////
-/*
-const questions = [
-    {
-		pregunta: "En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?",
-      image: 'img/question1.jpg',
-      answers: [
-        'Jack Napier',
-        'Joe Wayne',
-        'Arthur Fleck',
-        'No se sabe realmente'
-      ],
-      correct: 3
-	}
-]
-*/
 // array pregunta y respuesta
 
 const mipregunta = [
 	{
 		pregunta: "En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?",
-		respuestas: {
-			 a: "Un bardo",
-			 b: "Un mercader",
-             c: "Un mago",
-             d: "Un marinero"
-		},
+		respuestas: [
+			 "Un bardo",
+			 "Un mercader",
+             "Un mago",
+             "Un marinero"
+		],
 		respuestacorrecta: 'c'
 	},
 ];
-
-/*
-
-var myQuestions = [
-	{
-		question: "What is 10/2?",
-		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
-		},
-		correctAnswer: 'b'
-	},
-	{
-		question: "What is 30/3?",
-		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
-		},
-		correctAnswer: 'c'
-	}
-];
-
-*/
-
 
 ///////////////////////////////// funcion pintar 
 
@@ -140,85 +98,44 @@ function pintar(preguntaPintar){
 }
 pintar(mipregunta[0]);
 
-/*
-
-function pintar(preguntaPintar){
-	document.getElementsByClassName("caja1").innerText = preguntaPintar.pregunta;
-	
-}
-pintar(mipregunta[0]);
-
-*/
-
 ////// respuesta 1
 
 function pintar1(respuestaPintar){
 	let variablerespuesta1 = document.createElement("h4");
 	document.getElementsByClassName("caja2")[0].appendChild(variablerespuesta1);
-	variablerespuesta1.innerText = respuestaPintar.respuestas;
+	variablerespuesta1.innerText = respuestaPintar.respuestas[0];
 
 }
 pintar1(mipregunta[0]);
 
-/*
-
 ////// respuesta 2
 
 function pintar2(respuestaPintar1){
-	let variablerespuesta2 = document.createElement("h6");
+	let variablerespuesta2 = document.createElement("h4");
 	document.getElementsByClassName("caja3")[0].appendChild(variablerespuesta2);
-	variablerespuesta2.innerText = respuestaPintar1.respuestas;
+	variablerespuesta2.innerText = respuestaPintar1.respuestas[1];
 }
-pintar2(mipregunta[1]);
+pintar2(mipregunta[0]);
 
 ////// respuesta 3
 
 function pintar3(respuestaPintar2){
-	let variablerespuesta3 = document.createElement("h6");
+	let variablerespuesta3 = document.createElement("h4");
 	document.getElementsByClassName("caja4")[0].appendChild(variablerespuesta3);
-	variablerespuesta3.innerText = respuestaPintar2.respuestas;
+	variablerespuesta3.innerText = respuestaPintar2.respuestas[2];
 }
-pintar3(mipregunta[2]);
+pintar3(mipregunta[0]);
 
 ////// respuesta 4
 
 function pintar4(respuestaPintar3){
-	let variablerespuesta4 = document.createElement("h6");
+	let variablerespuesta4 = document.createElement("h4");
 	document.getElementsByClassName("caja5")[0].appendChild(variablerespuesta4);
-	variablerespuesta4.innerText = respuestaPintar3.respuestas;
+	variablerespuesta4.innerText = respuestaPintar3.respuestas[3];
 }
-pintar4(mipregunta[3]);
+pintar4(mipregunta[0]);
 
-*/
-
-
-
-
-
-
-
-
-/*
-function pintar(preguntaPintar){
-	let variablepregunta = document.getElementsByClassName("caja1");
-	variablepregunta.innerText = preguntaPintar.pregunta;
-	
-}
-pintar(mipregunta[0]);
-*/
-
-/*
-function pintar(preguntaPintar){
-	document.getElementsByClassName("caja1").innerText = preguntaPintar.pregunta;
-}
-pintar(mipregunta[0]);
-*/
-
-
-
-
-
-
+////
 
 let a = document.querySelector("#submit");
 
