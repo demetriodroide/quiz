@@ -144,40 +144,15 @@ let a = document.querySelector("#submit");
 let otrarespuesta = document.querySelectorAll("input");
 
 
-/*
+
 function prevenir(event) {
 	
 event.preventDefault();
-	if ( y.value === "mago" ){
-		console.log("acierto")
+	if ( y.checked ){
+		alert("acierto")
 	}
 	else { 
-		console.log("error");
+		alert("error");
 	}
 }
 a.addEventListener("click", prevenir );
- */
-
-
-
-
-
-
-//console.log(mipregunta[0].respuestacorrecta === "c")
-
-// evita el refresco de submit
-// y al mismo tiempo mira la respuesta correcta
-/*
-const mipregunta = [
-	{
-		pregunta: "En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?",
-		respuestas: [
-			 "Un bardo",
-			 "Un mercader",
-             "Un mago",
-             "Un marinero"
-		],
-		respuestacorrecta: 'c'
-	},
-];
-*/
