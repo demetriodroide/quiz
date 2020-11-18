@@ -1,12 +1,3 @@
-/*
-//create a form
-let f = document.createElement("form");
-f.setAttribute('name',"dnd");
-
-let field = document.createElement("fieldset");
-*/
-// pregunta
-
 // 1 label e input
 let l = document.createElement("label");
 l.setAttribute('for',"bard-field");
@@ -55,14 +46,10 @@ f.setAttribute('name',"dnd");
 let b = document.createElement("button");
 b.setAttribute("id","submit");
 b.innerHTML = "enviar";
-/*
-document.getElementsByClassName("quizclass")[0].appendChild(f);
-f.appendChild(field);
-*/
+
 document.getElementsByClassName("caja2")[0].appendChild(l);
 document.getElementsByClassName("caja2")[0].appendChild(i);
-//field.appendChild(l);
-//field.appendChild(i);
+
 document.getElementsByClassName("caja3")[0].appendChild(k);
 document.getElementsByClassName("caja3")[0].appendChild(u);
 
